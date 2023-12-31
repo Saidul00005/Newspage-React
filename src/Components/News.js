@@ -36,7 +36,7 @@ export class News extends Component {
       }
 
       handleNextClick = async ()=> {
-        // console.log("next")
+          // console.log("next")
           let url= `https://newsapi.org/v2/top-headlines?country=${this.props.country}&catagory=${this.props.catagory}&apiKey=1d898f9052114ee3abe2a55718fe044b&page=${this.state.page +1}&pageSize=${this.props.pageSize}`
           this.setState({loading:true});
           let data = await fetch(url);  
